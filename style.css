@@ -15,8 +15,9 @@
   
   body {
     overflow-x: hidden;
-    background-color: black;
-    color: white;
+    background-image: url('tt1.jpg');
+    color: black;
+    font-weight: 600;
   }
 
   h1,
@@ -63,6 +64,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: blueviolet;
   }
   
   .header .logo {
@@ -119,4 +121,17 @@
     .main{
       grid-template-columns: 1fr ;
     }
+  }
+.track {
+    
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 100%;
+    left: 25%;
+    animation: trackanimation 5s linear infinite;
+}
+
+@keyframes trackanimation {
+  100% {
+      transform: translate(0, -600%);
   }
