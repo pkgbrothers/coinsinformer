@@ -91,6 +91,8 @@
     display: grid;
 	grid-template-columns: 65% 35%;
   justify-items: center;
+	  width:100%;
+	  min-height:600px;
  
   
   }
