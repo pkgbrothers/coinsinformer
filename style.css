@@ -57,19 +57,7 @@
   Header Section Start
   ======================================= */
   
-  .header {
-    padding: 0 4.8rem;
-    height: 10rem;
-    /* background: red; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: blueviolet;
-  }
-  
-  .header .logo {
-    height: 9rem;
-  }
+ 
   
   .navbar-lists {
     display: flex;
