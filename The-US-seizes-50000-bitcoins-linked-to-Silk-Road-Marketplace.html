@@ -4,43 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The US seizes 50,000 bitcoins linked to Silk Road Marketplace</title>
-
-
-
-<link href='style.css' rel='stylesheet' type='text/css'/>
-  <script src="good.css"></script>
+    <title>About</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-     <img src="move.png" class="w-10 h-10" alt="btc">
-      <span class="ml-3 text-xl">Coinsinformer</span>
-    </a>
-<nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-2xl font-bold justify-center">
-      <a class="mr-20 hover:text-gray-900">Home</a>
-      <a class="mr-20 hover:text-gray-900">News</a>
-      <a class="mr-20 hover:text-gray-900">About</a>
-      <a class="mr-20 hover:text-gray-900">Privacy</a>
-      <a class="mr-20 hover:text-gray-900">Contact</a>
+    <button onclick="navShow()" id="toggleButton">
+        <svg viewBox="0 0 24 24">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+        </svg>
+      </button>
+      <button onclick="navShow()" id="closeButton">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6L6 18M6 6l12 12"></path>
+        </svg></button>
+
+    <nav id="nav"><li><a href="/">Home</a></li>
+        <li><a href="/news">News</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/privacy">Privacy</a></li>
+        <li><a href="/contact">Contact</a></li>
     </nav>
+    <hr>
+    <main id="main">
+        <h1>The US seizes 50,000 bitcoins linked to Silk Road Marketplace</h1>
+<p>Bitcoin seize news is that Bitcoin, which was acquired in 2012 and was worth $3.36 billion in November, is now worth $1.04 billion. Damian Williams, the U.S. attorney for the Southern District of latest York, said Monday that authorities seized 50,676 bitcoins linked to the Silk Road darknet marketplace in November. Bitcoin was valued at $3.36 billion at the time it had been discovered. it's now worth $1.04 billion. </p><hr>
+<p>In November, it had been the largest cryptocurrency seizure to date, but it's since been surpassed by the 70,000 bitcoins seized in February about the Bitfinex hack. In the Silk Road case, the coins were found at an address in Georgia related to James Zhong. The feds also found $661,900 in cash also as various precious metals. Zhong pleaded guilty to wire fraud in 2012, consistent with a Justice Department statement Monday. "This case shows that we cannot stop watching money, regardless of how expertly hidden, even on the circuit card at the bottom of a popcorn can," Williams said in a statement. </p><hr>
+<p>Silk Road was an illegal darknet marketplace that operated between 2011 and 2013 that primarily used Bitcoin as a form of payment. the location collapsed after the arrest of its operator, Ross Ulbricht, who is serving a double life and 40 years in prison without the possibility of parole. In 2014, US Marshals auctioned several tranches of seized bitcoins, with 50,000 coins selling for $20 million, followed by an auction of 30,000 coins some months earlier. According to the Justice Department, Zhong manipulated Silk Road's withdrawal system by triggering 140 transactions in quick succession, tricking the system into crediting bitcoins to multiple external wallets.</p>
 
-<main class="main">
-    <img src="move.png" width="40" height="40" class="track">
-    <img src="move.png" width="40" height="40" class="track2">
-    <img src="move.png" width="40" height="40" class="track3">
-<left class="left">
-<h1>The US seizes 50,000 bitcoins linked to Silk Road Marketplace</h1>
-<p>Bitcoin seize news is that Bitcoin, which was acquired in 2012 and was worth $3.36 billion in November, is now worth $1.04 billion. Damian Williams, the U.S. attorney for the Southern District of latest York, said Monday that authorities seized 50,676 bitcoins linked to the Silk Road darknet marketplace in November. Bitcoin was valued at $3.36 billion at the time it had been discovered. it's now worth $1.04 billion.
-In November, it had been the largest cryptocurrency seizure to date, but it's since been surpassed by the 70,000 bitcoins seized in February about the Bitfinex hack. In the Silk Road case, the coins were found at an address in Georgia related to James Zhong. The feds also found $661,900 in cash also as various precious metals. Zhong pleaded guilty to wire fraud in 2012, consistent with a Justice Department statement Monday. "This case shows that we cannot stop watching money, regardless of how expertly hidden, even on the circuit card at the bottom of a popcorn can," Williams said in a statement. 
-Silk Road was an illegal darknet marketplace that operated between 2011 and 2013 that primarily used Bitcoin as a form of payment. the location collapsed after the arrest of its operator, Ross Ulbricht, who is serving a double life and 40 years in prison without the possibility of parole. In 2014, US Marshals auctioned several tranches of seized bitcoins, with 50,000 coins selling for $20 million, followed by an auction of 30,000 coins some months earlier. According to the Justice Department, Zhong manipulated Silk Road's withdrawal system by triggering 140 transactions in quick succession, tricking the system into crediting bitcoins to multiple external wallets.
-</p>
-</left>
-<right class="right">
-</right>
-
-</main>
-    
+    </main>
+    <hr><hr>
+    <script>
+        function navShow() {
+          var x = document.getElementById("toggleButton");
+          var y = document.getElementById("closeButton");
+          var z = document.getElementById("nav");
+          var m = document.getElementById("main");
+       
+          if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "none";
+            m.style.display = "block";
+          } else {
+            x.style.display = "none";
+            y.style.display = "block";
+            z.style.display = "block";
+            m.style.display = "none";
+          }
+        }
+      
+      </script>
 </body>
 </html>
