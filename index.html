@@ -4,45 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>coinsinformer</title>
-
-
-
-<link href='style.css' rel='stylesheet' type='text/css'/>
-    <script src="good.css"></script>
-
+    <title>Coindinformer</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="text-gray-600 body-font">
-  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-     <img src="move.png" class="w-10 h-10" alt="btc">
-      <span class="ml-3 text-xl">Coinsinformer</span>
-    </a>
-<nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-2xl font-bold justify-center">
-      <a class="mr-20 hover:text-gray-900">Home</a>
-      <a class="mr-20 hover:text-gray-900">News</a>
-      <a class="mr-20 hover:text-gray-900">About</a>
-      <a class="mr-20 hover:text-gray-900">Privacy</a>
-      <a class="mr-20 hover:text-gray-900">Contact</a>
+    <button onclick="navShow()" id="toggleButton">
+        <svg viewBox="0 0 24 24">
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+        </svg>
+      </button>
+      <button onclick="navShow()" id="closeButton">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6L6 18M6 6l12 12"></path>
+        </svg></button>
+
+    <nav id="nav"><li><a href="/">Home</a></li>
+        <li><a href="/news">News</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/privacy">Privacy</a></li>
+        <li><a href="/contact">Contact</a></li>
     </nav>
-        
 
-<main class="main">
-    <img src="move.png" width="40" height="40" class="track">
-    <img src="move.png" width="40" height="40" class="track2">
-    <img src="move.png" width="40" height="40" class="track3">
-<left class="left">
-<a href="https://coinsinformer.com/The-US-seizes-50000-bitcoins-linked-to-Silk-Road-Marketplace.html" class="btitle">The US seizes 50,000 bitcoins</a>
-<p>Bitcoin seize news is that Bitcoin, which was acquired in 2012 and was worth $3.36 billion in November, is now worth $1.04 billion. Damian Williams, the U.S. attorney .....</p>
+    <main id="main">
+        <a href="url" class="btitle">The US seizes 50,000 bitcoins</a>
+        <p>Bitcoin seize news is that Bitcoin, which was acquired in 2012 and was worth $3.36 billion in November, is now
+          worth $1.04 billion. Damian Williams, the U.S. attorney .....</p>
+  
+        <a class="read-more" href="#">READ MORE</a>
+    </main>
 
-<a class="read-more" href="https://coinsinformer.com/The-US-seizes-50000-bitcoins-linked-to-Silk-Road-Marketplace.html">READ MORE</a>
-
-</left>
-<right class="right">
-</right>
-
-</main>
-    
+    <script>
+        function navShow() {
+          var x = document.getElementById("toggleButton");
+          var y = document.getElementById("closeButton");
+          var z = document.getElementById("nav");
+          var m = document.getElementById("main");
+       
+          if (x.style.display === "none") {
+            x.style.display = "block";
+            y.style.display = "none";
+            z.style.display = "none";
+            m.style.display = "block";
+          } else {
+            x.style.display = "none";
+            y.style.display = "block";
+            z.style.display = "block";
+            m.style.display = "none";
+          }
+        }
+      
+      </script>
 </body>
 </html>
