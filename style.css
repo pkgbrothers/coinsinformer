@@ -1,172 +1,49 @@
-* {
-    margin: 0;
+* { margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Work Sans", sans-serif;
-  }
-  
-  
-  html {
-    font-size: 62.5%;
-    /* scroll-behavior: smooth; */
-    /* 1rem = 10px */
-    overflow-x: hidden;
-  }
-  
-  body {
-    overflow-x: hidden;
- 
-    font-weight: 600;
+    font-weight: 700;}
 
-  }
+body { overflow-x: hidden;
+    background-image: url('bb.jpeg') ;
+    background-size: cover;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+    background-position: center;}
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-family: "Poppins", sans-serif;
-  }
-  
-  h1, .btitle {
+  a {text-decoration: none;
+    font-size: 35px;
+}
+li { list-style: none;
+   }
 
-    font-size: 3rem;
-    font-weight: 600;
-  }
-  
-  h3 {
-    font-size: 1.8rem;
-    font-weight: 400;
-  }
-  
-  p {
-    line-height: 1.6;
-    font-size: 2.5rem;
-    margin: 5px;
-    padding: 5px;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  /* ===========================================
-  Header Section Start
-  ======================================= */
-  
- 
-  
-  .navbar-lists {
-    display: flex;
-    gap: 4.8rem;
-  }
-  
-  .navbar-link:link,
-  .navbar-link:visited {
-    display: inline-block;
-    text-decoration: none;
-    font-size: 1.8rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    color: var(--black);
-    transition: color 0.3s linear;
-  }
-  .main{
-    
-    display: grid;
-	grid-template-columns: 65% 35%;
-  justify-items: center;
-  background-image: url('bg.jpeg') ;
- 
-  
-  }
-  .left{
-    text-align: center;
-    margin: 5px;
-    padding: 15px;
-    border-radius: 20px;
-    width:100%;
-    min-height: 500px;
-    
-    
-  }
-  .right{
-    display: grid;
-    justify-items: center;
-    margin: 5px;
-    padding: 15px;
-    border-radius: 20px;
- 
-    overflow-x: hidden;
-    width:100%;
-    min-height: 500px;
+  nav{display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    background-color: whitesmoke;
+    padding: 20px;}
 
- 
-  }
-  .read-more{
-    border-radius: 50px;
-    background-color: #e84e89;
-    font-size: 2rem;
-    font-weight: 600;
-    color: white;
-    padding: 8px;
-    margin: 5px;
+main{width: 70%;
+margin: auto;
+text-align: center;}
+p{font-size: 25px;}
 
-  }
-  .rimg{
-    width: 80%;
-  height: auto;
-  }
-  @media (max-width: 600px) {
-    .main{
-      grid-template-columns: 1fr ;
-    }
-  }
+#toggleButton svg,#closeButton svg { height: 30px;
+    width: 30px; }
 
-.track {
-  
-    background-repeat: repeat-x;
+  #toggleButton, #closeButton { background-color: transparent;
+    border: none;
     position: absolute;
-    top: 100%;
-    left: 25%;
-    animation: trackanimation 5s linear infinite;
-}
+    right: 20px;
+    top: 20px; 
+display: none;}
 
-@keyframes trackanimation {
-  100% {
-      transform: translate(0, -600%);
-  }
-}
+@media (max-width: 600px) {
+    nav{display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+display: none;}
+#toggleButton{display: block;}
+li{margin-top: 10px;}
 
-.track2 {
-  
-  background-repeat: repeat-x;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  animation: trackanimation 5s linear infinite;
-}
-
-@keyframes trackanimation {
-100% {
-    transform: translate(0, -600%);
-}
-}
-
-.track3 {
-  
-  background-repeat: repeat-x;
-  position: absolute;
-  top: 100%;
-  left: 75%;
-  animation: trackanimation 5s linear infinite;
-}
-
-@keyframes trackanimation {
-100% {
-    transform: translate(0, -600%);
-}
+    
 }
