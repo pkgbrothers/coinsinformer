@@ -25,7 +25,8 @@ li { list-style: none;
 main{width: 70%;
 margin: auto;
 text-align: center;}
-p{font-size: 25px;}
+p{font-size: 25px;
+margin-top: 20px;}
 
 #toggleButton svg,#closeButton svg { height: 30px;
     width: 30px; }
